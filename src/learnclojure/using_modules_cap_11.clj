@@ -1,5 +1,8 @@
 ;; see https://github.com/thecodemaker/learnclojure
 ;; cap 11 - import external sources/modules and use them
+;;;;;;;;;;;;;;;;;;;;;
+
+
 (require 'clojure.string)
 (clojure.string/split "a,b,c" #",") ; => ["a" "b" "c"]
 
@@ -24,3 +27,21 @@
     (:require
       [clojure.string :as str]
       [clojure.set :as set]))
+
+;; import for java classes
+(import 'java.util.Date)
+(Date.) ; => current date
+
+;; import more classes from same package
+(import '[java.util Date Calendar])
+
+;; do the imports in the namespace declaration
+;; you can also use :use or :import
+(ns learnclojure.using_modules_cap_11
+  (:require [clojure.string :as str])
+  (:import [java.util.Date]))
+(str/split "a,b,c" #",")
+
+
+
+
