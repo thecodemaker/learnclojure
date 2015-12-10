@@ -1,4 +1,4 @@
-(ns learnclojure.test.test
+(ns learnclojure.test.testing_cap_12
   (:require [clojure.test :refer [is]]))
 
 

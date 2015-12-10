@@ -2,7 +2,7 @@
 ;  Java
 ;;;;;;;;;;;;;;;;;
 
-(ns learnclojure.java)
+(ns learnclojure.using_java_cap_13)
 
 ; Java has a huge and useful standard library, so
 ; you'll want to learn how to get at it.
