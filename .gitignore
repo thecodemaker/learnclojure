@@ -4,9 +4,8 @@
 /classes
 /target
 /native
-/.lein-failures
 /checkouts
-/.lein-deps-sum
+/.lein*
 .idea
 *.iml
 *-port
